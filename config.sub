@@ -943,6 +943,9 @@ case $basic_machine in
 	ppc64le-* | powerpc64little-*)
 		basic_machine=powerpc64le-`echo $basic_machine | sed 's/^[^-]*-//'`
 		;;
+	ppu)
+		basic_machine=powerpc64-unknown
+		;;
 	ps2)
 		basic_machine=i386-ibm
 		;;
